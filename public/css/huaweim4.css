@@ -1,0 +1,688 @@
+.head-top {
+  width: 100%;
+  height: 36px;
+  background: #2e2828;
+  font-size: 12px;
+}
+.head-top-ul > li {
+  float: left;
+  line-height: 36px;
+  padding: 0 8px;
+  position: relative;
+}
+.head-top-ul > li > a {
+  color: #afafaf;
+}
+.head-top-ul > li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #414141;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -5px;
+}
+.nobefore::before {
+  content: none !important;
+}
+.head-top-ul > li:hover a {
+  color: #fff;
+}
+.top-nav-list {
+  padding: 0 !important;
+}
+.top-nav-list p {
+  padding: 0 8px;
+}
+.top-nav-list span::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon-common.svg ) no-repeat -68px 8px;
+}
+.top-nav-list:hover p {
+  background: #fff;
+  position: relative;
+  z-index: 2597;
+}
+.top-nav-list span {
+  color: #afafaf;
+}
+.top-nav-list:hover span {
+  color: red;
+}
+.top-nav-list :hover span::after {
+  background-position: -81px 8px;
+}
+.top-nav-list:hover::before {
+  content: none;
+}
+.head-top-subnav {
+  background-color: #fff;
+  box-shadow: 0 3px 5px 0 #ccc;
+  position: absolute;
+  text-align: center;
+  line-height: 28px;
+  z-index: 2554;
+  display: none;
+}
+.more {
+  width: 120px;
+  height: 146px;
+  border-radius: 6px 0 6px 6px;
+  left: -35px;
+  top: 36px;
+  padding: 8px 0 12px;
+  box-sizing: border-box;
+}
+.more:hover .more-top span::after {
+  background-position: -81px 8px;
+}
+.more li a {
+  display: block;
+}
+.head-top-subnav a {
+  color: rgba(0, 0, 0, 0.39) !important;
+}
+.head-top-subnav > ul > li > a:hover a {
+  color: red;
+}
+.top-nav-list:hover .head-top-subnav {
+  display: block;
+}
+/* 客服服务 */
+.customer-service {
+  width: 100%;
+  height: 84px;
+  line-height: 33px;
+  border-radius: 0 0 15px 15px;
+  padding: 5px 0 12px;
+  box-sizing: border-box;
+}
+/* 网站导航 */
+.webset-nav {
+  width: 894px;
+  height: 209px;
+  border-radius: 8px 0 8px 8px;
+  position: absolute;
+  left: -809px;
+  top: 36px;
+}
+/* 手机版 */
+.app {
+  width: 247px;
+  height: 390px;
+  border-radius: 8px 0 8px 8px;
+  position: absolute;
+  left: -172px;
+  top: 37px;
+}
+/* 购物车 */
+.shopCar p {
+  color: #afafaf;
+}
+.shopCar p::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 20px;
+  background: url(../img/icon-common.svg) no-repeat -103px -2px;
+  vertical-align: middle;
+}
+.shopCar:hover {
+  background: #fff;
+}
+.shopCar:hover p {
+  color: red;
+}
+.shopCar:hover .head-top-ul > .shopCar::before {
+  content: none !important;
+}
+.shopCar:hover p::before {
+  background-position: -125px -2px;
+}
+/* 导航下部分log */
+.head h1 {
+  padding: 20px 0 24px;
+  margin-right: 40px ;
+}
+.head h1 img {
+  width: 200px;
+}
+.head .nav {
+  width: 520px;
+  height: 71px;
+  vertical-align: middle;
+}
+.head .nav ul > li {
+  float: left;
+  margin-right: 20px ;
+}
+.nav li a {
+  display: inline-block;
+  color: #000;
+  font-size: 18px;
+  height: 71px;
+  line-height: 71px;
+}
+.nav li img {
+  width: 75px;
+  margin-top: 25px;
+}
+.nav li a {
+  padding: 0 1px;
+  color: #000;
+}
+.head form {
+  width: 240px;
+  height: 30px;
+  border-radius: 15px ;
+  background: #ececec;
+  margin-top: 23px;
+  position: relative;
+}
+.head form > i {
+  position: absolute;
+  top: 3px;
+  right: 16px;
+}
+.head form > a:hover {
+  color: #2e2828;
+}
+.head form:hover {
+  border: 1px solid #848484;
+}
+.head input {
+  height: 30px;
+  float: left;
+  background: none;
+}
+.head .txt {
+  width: 200px;
+  text-indent: 15px;
+}
+.head .btn {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../iconfont/iconfont.eot');
+  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), url('../iconfont/iconfont.woff2') format('woff2'), url('../iconfont/iconfont.woff') format('woff'), url('../iconfont/iconfont.ttf') format('truetype'), url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+.head form a {
+  color: #999;
+  font-size: 12px;
+  position: absolute;
+  margin-right: 5px ;
+  top: 7px;
+}
+/* 版心导航栏菜单 */
+.yuat {
+  width: 100%;
+  height: 30px;
+}
+.yuat .boxsmall {
+  width: 100%;
+  height: 16px;
+  margin-top: 14px;
+}
+.yuat .boxsmall ul > li {
+  float: left;
+  font-size: 12px;
+}
+.yuat .boxsmall ul > li a {
+  color: #666;
+  padding: 0 8px;
+}
+.page {
+  width: 100%;
+  height: 639px;
+}
+.page .commodity {
+  width: 450px;
+  height: 536px;
+}
+.page .commodity > i > img {
+  width: 100%;
+  height: 450px;
+}
+.page .commodity .glary-nav {
+  width: 450px;
+  height: 68px;
+  padding: 0 38px ;
+  box-sizing: border-box;
+  position: relative;
+}
+.page .commodity .glary-nav > ul > li {
+  float: left;
+  margin-left: 10px;
+}
+.page .commodity .glary-nav > ul > li a {
+  display: inline-block;
+  border: 1px solid red;
+}
+.page .commodity .glary-nav > ul > li a img {
+  width: 60px;
+  height: 60px;
+}
+.page .commodity span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50% ;
+  position: absolute;
+}
+.page .commodity .span-1 {
+  top: 20px;
+  left: 5px;
+  background: url(../img/icon01.svg) -24px -97px no-repeat;
+}
+.page .commodity .span-2 {
+  top: 20px;
+  right: 5px;
+  background: url(../img/icon01.svg) -105px -97px no-repeat;
+}
+.page .information {
+  width: 730px;
+  height: 639px;
+}
+.page .information .product-mate {
+  width: 100%;
+  height: 61px;
+}
+.page .information .product-mate > p {
+  width: 100%;
+  height: 31px;
+  color: #3a3a3a;
+  font-size: 21px;
+}
+.page .information .product-mate > span {
+  display: inline-block;
+  color: #ca141d;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.page .information .product-info {
+  width: 100%;
+  height: 100px;
+}
+.page .information .product-info .product-price {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+}
+.page .information .product-info .product-price > div {
+  float: left;
+  width: 85px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.page .information .product-info .product-price > p {
+  float: left;
+  color: #ca141d;
+  font-size: 18px;
+  visibility: bottom;
+}
+.page .information .product-info .product-price > p > span {
+  font-size: 22px;
+}
+.page .information .product-info .product-ite {
+  height: 30px;
+}
+.page .information .product-info .product-ite .item-1 {
+  display: inline-block;
+  width: 85px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.page .information .product-info .product-ite .item-2 {
+  display: inline-block;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+}
+.page .information .product-info .product-prome {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding-left: 89px;
+}
+.page .information .product-info a {
+  display: inline-block;
+  width: 62px;
+  height: 16px;
+  font-size: 12px;
+  color: #ca141d;
+  border: 1px solid #ca141d;
+  line-height: 16px;
+  text-align: center;
+}
+.page .information .server {
+  width: 100%;
+  height: 18px;
+}
+.page .information .server .explain {
+  display: inline-block;
+  width: 85px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+.page .information .server .condition {
+  display: inline-block;
+  width: 638px;
+  height: 18px;
+  vertical-align: middle;
+}
+.page .information .server .condition > ul > li {
+  float: left;
+  font-size: 12px;
+  line-height: 18px;
+}
+.page .information .number {
+  width: 100%;
+  height: 18px;
+  margin-top: 12px;
+  font-size: 12px;
+}
+.page .information .number .isue-1 {
+  display: inline-block;
+  width: 85px;
+  height: 18px;
+}
+.page .information .number .isue-2 {
+  display: inline-block;
+  width: 638px;
+  height: 18px;
+}
+.page .information .top-frame {
+  width: 100%;
+  height: 16px;
+  border-top: 1px solid #444;
+}
+.page .information .style {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.page .information .style .style-color {
+  display: inline-block;
+  width: 85px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: top;
+}
+.page .information .style .style-elegant {
+  display: inline-block;
+  width: 638px;
+  height: 40px;
+}
+.page .information .style .style-elegant > ul > li {
+  float: left;
+  margin-right: 10px;
+}
+.page .information .style .style-elegant > ul > li a {
+  display: inline-block;
+  height: 40px;
+  border: 1px solid grey;
+  padding: 0 12px;
+}
+.page .information .style .style-elegant > ul > li a i {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.page .information .style .style-elegant > ul > li a span {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+}
+.page .information .style .style-elegant > ul > li a:active {
+  border: 1px solid #ca141d;
+}
+.page .information .style .style-elegant > ul > li img {
+  width: 30px;
+  height: 30px;
+}
+.page .information .vision {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.page .information .vision .chose-vision {
+  display: inline-block;
+  width: 85px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: top;
+}
+.page .information .vision .vision-phone {
+  display: inline-block;
+  width: 638px;
+  height: 40px;
+}
+.page .information .vision .vision-phone > ul > li {
+  float: left;
+  margin-right: 10px;
+}
+.page .information .vision .vision-phone > ul > li a {
+  display: inline-block;
+  height: 30px;
+  border: 1px solid grey;
+  padding: 0 12px;
+}
+.page .information .vision .vision-phone > ul > li span {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+}
+.page .information .vision .vision-phone a:active {
+  border: 1px solid #ca141d;
+}
+.page .information .server-product {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.page .information .server-product .server-mete {
+  display: inline-block;
+  width: 85px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: top;
+}
+.page .information .server-product .server-style {
+  display: inline-block;
+  width: 638px;
+  height: 40px;
+}
+.page .information .server-product .server-style > ul > li {
+  float: left;
+  margin-right: 10px;
+}
+.page .information .server-product .server-style > ul > li a {
+  display: inline-block;
+  height: 30px;
+  border: 1px solid grey;
+  padding: 0 12px;
+}
+.page .information .server-product .server-style > ul > li span {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+}
+.page .information .server-product .server-style a:active {
+  border: 1px solid #ca141d;
+}
+.page .information .introduce {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.page .information .introduce .mete {
+  display: inline-block;
+  width: 85px;
+  line-height: 30px;
+  vertical-align: top;
+}
+.page .information .introduce .introduce-style {
+  display: inline-block;
+  width: 638px;
+  height: 80px;
+}
+.page .information .introduce .introduce-style .last-li {
+  margin-top: 10px;
+}
+.page .information .introduce .introduce-style > ul > li {
+  float: left;
+  margin-right: 10px;
+}
+.page .information .introduce .introduce-style > ul > li a {
+  display: inline-block;
+  height: 30px;
+  border: 1px solid grey;
+  padding: 0 12px;
+}
+.page .information .introduce .introduce-style > ul > li span {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+}
+.page .information .introduce .introduce-style a:active {
+  border: 1px solid #ca141d;
+}
+.page .information .havechose {
+  width: 100%;
+  height: 18px;
+  font-size: 12px;
+  margin: 12px 0;
+}
+.page .information .havechose .product {
+  display: inline-block;
+  width: 85px;
+  height: 18px;
+  line-height: 18px;
+  vertical-align: top;
+}
+.page .information .havechose .show {
+  display: inline-block;
+  width: 638px;
+  height: 18px;
+}
+.page .information .havechose .show > ul > li {
+  float: left;
+}
+.page .information .havechose .show > ul > li span {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  color: #ca141d;
+}
+.page .information .addshop {
+  width: 100%;
+  height: 46px;
+}
+.page .information .addshop .number {
+  display: inline-block;
+  width: 42px;
+  height: 46px;
+  background: green;
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+  line-height: 44px;
+  color: #444;
+  margin-top: 0;
+}
+.page .information .addshop .number a {
+  display: inline-block;
+  width: 21px;
+  height: 23px;
+  border: 1px solid grey;
+  font-size: 18px;
+  text-align: center;
+  line-height: 18px;
+  color: #444;
+  position: absolute;
+  box-sizing: border-box;
+}
+.page .information .addshop .number .a-1 {
+  top: 0;
+  right: -21px;
+}
+.page .information .addshop .number .a-2 {
+  top: 23px;
+  right: -21px;
+  border-top: none;
+  font-size: 20px;
+}
+.page .information .addshop .free {
+  display: inline-block;
+  width: 54px;
+  height: 44px;
+  margin-left: 30px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 60px;
+  color: #ca141d;
+  border: 1px solid #ca141d;
+  vertical-align: top;
+}
+.page .information .addshop .car {
+  display: inline-block;
+  width: 131px;
+  height: 46px;
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 46px;
+  text-align: center;
+  color: #fff;
+  background: #ca141d;
+  vertical-align: top;
+}
+.product-menu {
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  border-top: 1px solid #ececec;
+}
+.product-menu .center {
+  height: 40px;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-left: 370px;
+}
+.product-menu .center ul > li {
+  float: left;
+  margin-left: 80px;
+}
+.product-menu .center ul > li a {
+  font-size: 18px;
+  color: #666;
+}
+.product-menu .center ul > li .one-1 {
+  display: inline-block;
+  color: #ca141d;
+  height: 30px;
+  text-align: center;
+  border-bottom: 2px solid #ca141d;
+}
