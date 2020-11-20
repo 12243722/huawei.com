@@ -1,36 +1,27 @@
  import './library/jquery.js';
  import './library/jquery.lazyload.min.js';
- /* 公告栏滚动 */
- // window.onload = function() {
- //     let show = document.getElementById("show");
- //     let show = document.getElementById("bgshow");
- //     let h = 0;
- //     let timer;
- //     timer = setInterval(function() {
- //         show.style.top = h + 'px';
- //         h = h - 40;
- //         while (h == -200) {
+ import { baseUrl } from './library/config.js';
 
- //             h = 0;
- //         };
- //     }, 1000);
+ (function() {
+     $.ajax({
+         type: "get",
+         url: `${baseUrl}/product/getProducts`,
+         dataType: "json",
+         success: function(res) {
+             //获得数据后进行字符串拼接
+             let tempLi = '';
+             res.forEach((elm, i) => {
 
- //     // bgshow.onmouseenter = function() {
- //     //     clearInterval(timer);
- //     // }
-
- //     /* 拖动条scrollTop拖到3000时显示右边固定导航 */
- //     let show = document.getElementById("navright");
- //     let scrolltop = document.scrollTop;
-
- //     if (scrolltop == 3000) {
- //         show.style.display = "block";
- //     };
-
-
-
- // };
-
+                 let picture = JSON.parse(elm.picture);
+                 //  console.log(picture);
+                 tempLi += ` <li>
+                            <a href="./html/product.html?${elm.id}"><img src="${picture[0].src}" alt=""></a>
+                          </li> `;
+             });
+             $('#wlist').append(tempLi);
+         }
+     });
+ })();
 
 
 

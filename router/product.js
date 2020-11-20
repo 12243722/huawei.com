@@ -11,7 +11,6 @@ router.route('/getProducts')
         let sql = 'select * from product';
         conn.query(sql, (err, result) => {
             if (err) console.log(err);
-
             res.json(result);
         });
     });

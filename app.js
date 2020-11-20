@@ -3,7 +3,6 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const createError = require('http-errors');
 
-
 const app = express();
 const usersRouter = require('./router/users');
 const productRouter = require('./router/product');
