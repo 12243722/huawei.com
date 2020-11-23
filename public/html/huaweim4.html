@@ -121,7 +121,7 @@
         <!-- 商品详情 -->
         <div class="page">
             <div class="left commodity">
-                <i><img src="../img/HP40P5g.png" alt=""></i>
+                <i><img src="${picture[1].src}" alt=""></i>
                 <div class="glary-nav">
                     <span class="span-1"></span>
                     <span class="span-2"></span>
@@ -149,13 +149,13 @@
             </div>
             <div class="right information">
                 <div class="product-mate">
-                    <p>HUAWEI Mate 40 Pro 5G 全网通 8GB+256GB（亮黑色）</p>
+                    <p>${res.title}</p>
                     <span>【10:08限量开售】①赠手机摄影课程，抽国内机票 ②以旧换新最高补贴1111元</span>
                 </div>
                 <div class="product-info">
                     <div class="product-price">
                         <div>价&nbsp&nbsp&nbsp&nbsp&nbsp格</div>
-                        <p>￥<span>6999.00</span></p>
+                        <p>￥<span>${res.price}</span></p>
                     </div>
                     <div class="product-ite">
                         <div class="item-1">
@@ -244,15 +244,15 @@
                     </div>
                 </div>
                 <div class="addshop">
-                    <div class="number"><a class="a-1" href="#">+</a><a class="a-2" href="#">-</a>1</div>
-                    <div class="free">免费登记</div>
-                    <div class="car">加入购物车</div>
+                    <div class="p-num">库存数量:${res.num}</div>
+                    <div class="number"><a class="a-1" href="#">+</a><a class="a-2" href="#">-</a><input type="number" value="1" min="1" max="${res.num}" id="num"></div>
+                    <div class="car">
+                        <input type="button" value="加入购物车" id="additem">
+                    </div>
+                    <div class="free">立即下单</div>
                 </div>
             </div>
         </div>
-
-
-
 
     </div>
     <div class="product-menu">

@@ -5,7 +5,7 @@ import './library/jquery.js'
 $('#submit').on('click', function() {
     $.ajax({
         type: "POST",
-        url: "/reg",
+        url: "/reg", 
         data: {
             username: $('#username').val(),
             password: $('#password').val()

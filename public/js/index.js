@@ -2,6 +2,7 @@
  import './library/jquery.lazyload.min.js';
  import { baseUrl } from './library/config.js';
 
+ //渲染主页
  (function() {
      $.ajax({
          type: "get",
@@ -15,7 +16,7 @@
                  let picture = JSON.parse(elm.picture);
                  //  console.log(picture);
                  tempLi += ` <li>
-                            <a href="./html/product.html?${elm.id}"><img src="${picture[0].src}" alt=""></a>
+                            <a href="./html/xiangqin.html?id=${elm.id}"><img src="${picture[0].src}" alt=""></a>
                           </li> `;
              });
              $('#wlist').append(tempLi);

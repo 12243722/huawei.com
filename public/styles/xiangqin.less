@@ -21,7 +21,7 @@
     width: 100%;
     height: 639px; 
     .commodity{
-        width: 450px;
+        width: 450px; 
         height: 536px;
         >i>img{
             width: 100%;
@@ -72,11 +72,9 @@
         width: 730px;
         height: 639px;
         .product-mate{
-            width: 100%;
-            height: 61px;
+            width: 100%;           
             >p{
-                width: 100%;
-                height: 31px;
+                width: 100%;               
                 color: #3a3a3a;
                 font-size: 21px;
             }
@@ -89,7 +87,7 @@
         }
         .product-info{
             width: 100%;
-            height: 100px;
+            background:hsl(0, 23%, 92%);
             .product-price{
             width: 100%;
             height: 30px;
@@ -145,7 +143,7 @@
             color: #ca141d;
             border: 1px solid  #ca141d;
             line-height: 16px;
-             text-align: center;
+            text-align: center;
             }
           }   
     
@@ -223,6 +221,7 @@
                    height: 40px;
                    border: 1px solid grey;
                    padding: 0 12px;
+                   color: #3a3a3a;
                    i{
                     display: inline-block;
                     margin-right: 10px;
@@ -248,7 +247,6 @@
         }
         .vision{
             width:100%;
-            height:30px;
             margin-bottom:10px;
             font-size:12px;
            .chose-vision{
@@ -261,7 +259,6 @@
            .vision-phone{
             display: inline-block;
             width: 638px;
-            height:40px;
             >ul>li{
                 float:left;
                 margin-right: 10px;     
@@ -269,7 +266,8 @@
                    display: inline-block;
                    height: 30px;
                    border: 1px solid grey;
-                   padding: 0 12px;                  
+                   padding: 0 12px;
+                   color: #3a3a3a;                  
                    }
                   span{
                       display: inline-block;
@@ -308,7 +306,8 @@
                    display: inline-block;
                    height: 30px;
                    border: 1px solid grey;
-                   padding: 0 12px;                  
+                   padding: 0 12px; 
+                   color: #3a3a3a;                  
                    }
                   span{
                       display: inline-block;
@@ -326,7 +325,6 @@
 
         .introduce{
             width:100%;
-            height:80px;
             margin-bottom:10px;
             font-size:12px;
            .mete{
@@ -338,7 +336,6 @@
            .introduce-style{
             display: inline-block;
             width: 638px;
-            height:80px;
             .last-li{
                 margin-top:10px;
             }
@@ -349,7 +346,8 @@
                    display: inline-block;
                    height: 30px;
                    border: 1px solid grey;
-                   padding: 0 12px;                  
+                   padding: 0 12px;
+                   color: #3a3a3a;                   
                    }
                   span{
                       display: inline-block;
@@ -396,15 +394,20 @@
     height: 46px;
     .number{
         display: inline-block;
-        width: 42px;
-        height: 46px;
-        background: green;
+         width: 42px;
+         height: 44px;
+        border: 1px solid grey;
         position:relative;
-        font-size: 25px;
-        text-align: center;
-        line-height: 44px;
         color: #444;
         margin-top: 0;
+        input{
+            
+            width: 100%;
+            height: 100%;
+            font-size: 18px;
+            text-align: center;
+           
+        }
         
         a{
             display: inline-block;
@@ -412,7 +415,7 @@
             height: 23px;
             border: 1px solid grey;
             font-size: 18px;
-            text-align: center;
+            text-align: center; 
             line-height: 18px;
             color: #444;
             position:absolute;
@@ -420,11 +423,11 @@
 
         }
         .a-1{
-            top: 0;
+            top: -1px;
             right: -21px;
         }
         .a-2{
-            top: 23px;
+            top: 22px;
             right: -21px;
             border-top: none;
             font-size: 20px;
@@ -432,28 +435,37 @@
     }
     .free{
         display: inline-block;
-        width: 54px;
-        height: 44px;
-        margin-left: 30px;
-        font-size: 12px;
+        width: 160px;
+        height: 46px;
+        margin-left: 10px;
+        font-size: 20px;
         text-align: center;
-        line-height: 60px;
-        color:#ca141d;
+        line-height: 46px;
+        background:#ca141d;
+        color: #fff;
         border:1px solid #ca141d;
          vertical-align:top;
         
     }
     .car{
         display: inline-block;
-        width: 131px;
+        width: 160px;
         height: 46px;
-        margin-left: 10px;
+        margin-left: 30px;
         font-size: 20px;
         line-height: 46px;
         text-align: center;
-        color:#fff;
-        background:  #ca141d;
+       
         vertical-align:top;
+        input{
+            display:block;
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            margin-top:0px; 
+            color:#fff;
+            background:  orange;         
+        }       
         
     }
 }

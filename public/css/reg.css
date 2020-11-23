@@ -1,0 +1,41 @@
+header {
+    width: 100%;
+    background: grey;
+}
+
+header .reg-logo {
+    float: left;
+    margin-top: 12px;
+}
+
+header .reg-logo img {
+    width: 108px;
+    height: 24px;
+}
+
+header .mate-logo {
+    width: 97px;
+    height: 48px;
+    float: left;
+}
+
+header .mate-logo p {
+    display: inline-block;
+    color: #191919;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    margin-top: 16px;
+    margin-left: 28px;
+}
+
+header .mate-logo p::before {
+    content: "";
+    width: 1px;
+    height: 10px;
+    color: red;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
